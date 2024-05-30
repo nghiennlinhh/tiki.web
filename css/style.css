@@ -11,6 +11,8 @@
   padding: 8px 0px;
   display: flex;
   gap:48px;
+  align-items: center;
+  justify-content: center;
 }
 .styles__Logo{
   display: flex;
@@ -50,6 +52,7 @@
   flex: 1 1 0%;
   width: 100%;
   align-items: center;
+  border-radius: 10px;
 }
 .style__InputSearch{
   padding: 0px 8px;
@@ -58,8 +61,17 @@
   border-top-right-radius: 8px;
   outline: none;
 }
+.button__wrapper{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.divider{
+  height: 26px;
+  width: 1px;
+  background: rgb(177, 176, 176);
+}
 .style__BottonSearch{
-  cursor: pointer;
   width: 92px;
   height: 38px;
   padding: 4px;
@@ -68,7 +80,6 @@
   color: rgb( 10,104,225);
   font-weight: 400;
   font-size: 14px;
-  position: relative;
 }
 .iconSearch{
   width: 20px;
@@ -83,9 +94,13 @@
 .style__IconHome{
   display: flex;
   align-items:center;
-  padding: 8px 16px;
   border-radius: 8px;
-  position: relative;
+  justify-content: center;
+  width: 120px;
+}
+.style__IconHome:hover{
+  background-color:rgba(0, 96, 255, 0.12);
+
 }
 .style__IconHome__icon{
   width: 24px;
@@ -101,9 +116,12 @@
 .style__Account{
   display: flex;
   align-items:center;
-  padding: 8px 16px;
   border-radius: 8px;
-  position: relative;
+  justify-content: center;
+  width: 120px;
+}
+.style__Account:hover{
+  background-color:rgba(0, 96, 255, 0.129);
 }
 .style__Account__icon{
   width: 24px;
@@ -117,7 +135,13 @@
   color: rgb(128, 128, 137) ;
 }
 .style__cartRappe{
-  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  padding: 8px ;
+  gap: 10px;
+}
+.style__cartRappe:hover {
+  background-color: rgba(0, 96, 255, 0.12);
 }
 .style__cartRappe__icon{
   width: 24px;
@@ -129,18 +153,17 @@
   display: flex;
   flex-direction: row;
   -webkit-box-align:center;
+  align-items: center;
 }
-.style__QuicklinhContainer{
+.style__QuicklinkContainer{
   display: flex;
-  height: 24px;
   width: 712px;
   align-items: flex-start;
   flex-wrap: wrap;
   overflow: hidden;
   gap: 12px;
-  padding: 8px 16px;
 }
-.style__QuicklinhContainer > a {
+.style__QuicklinkContainer > a {
   color: rgb(123, 123, 125) ;
   text-decoration: none;
 }
@@ -148,7 +171,6 @@
   display: flex;
   flex-direction: row;
   align-items:center;
-  padding: 8px 16px;
   border-radius: 8px;
   position: relative;
 }
@@ -166,6 +188,19 @@
   margin-left:4px ;
 }
 /* End Header*/
-.style__navbar{
+.style__navbar {
   background-color: #ffe880;
+}
+.style__navbarcontent{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 4px;
+  height: 42px;
+}
+.style__navbarcontent > a {
+  text-decoration: none;
+  padding: 4px;
+  color: black;
 }
